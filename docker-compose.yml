@@ -1,0 +1,11 @@
+services:
+  nats:
+    image: nats
+    ports:
+      - "4222:4222"
+      - "9222:9222"
+    command: "-c /config/nats-config.conf"
+    volumes:
+      - ./config:/config
+
+
