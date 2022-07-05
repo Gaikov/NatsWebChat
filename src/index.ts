@@ -3,7 +3,8 @@ import {connect, Msg, NatsError, StringCodec} from "nats.ws";
 async function main(): Promise<void> {
     console.log("connecting to server");
     const nc = await connect({
-        servers: "ws://localhost:9222",
+        //servers: "ws://localhost:9222",
+        servers: "ws://167.172.45.107:9222",
         reconnect: true,
     })
 
